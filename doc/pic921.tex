@@ -1,0 +1,53 @@
+\documentclass[fontsize=12pt,paper=a4]{jlreq}
+\usepackage{graphicx}
+%\usepackage[margin=6truemm]{geometry}
+%\usepackage{caption}
+\usepackage{booktabs}
+\graphicspath{{../png/}}
+
+%begin
+\begin{document}
+\section{Tokyo921\_run.nmlの結果 quick view}
+河川流量を変化させる実験において、流量1.8倍のケースである。
+
+\begin{table}
+  \begin{minipage}[hbtp]{0.5\hsize}
+    \begin{tabular}{lrr} \toprule
+      パラメータ & 値 \\ \midrule
+      HPRNU & 0.25\\
+      Horizontal\_mixing\_coefficient & 0.25\\
+      VPRNU & 0.12\\
+      Vertical\_mixing\_coefficient & 1e-7\\
+      風力 & 1.4倍\\ \bottomrule
+    \end{tabular}
+  \end{minipage}
+\end{table}
+
+%salinity
+\begin{figure}[hbtp]
+        \centering
+        \includegraphics[keepaspectratio, width=170mm]{Tokyo920/salinity_kawasaki.png}
+        \caption{川崎人工島での塩分　左から表層、中層、底層\\緑点は公共用水域、水色が実験値、オレンジが観測値}
+\end{figure}
+
+\begin{figure}[hbtp]
+        \centering
+        \includegraphics[keepaspectratio, width=170mm]{contour/salinitydynTokyo920_kawasaki.png}
+        \caption{川崎人工島での塩分コンターマップ}
+\end{figure}
+
+
+%temp
+\begin{figure}[hbtp]
+        \centering
+        \includegraphics[keepaspectratio, width=170mm]{Tokyo920/temperature_kawasaki.png}
+        \caption{川崎人工島での水温　左から表層、中層、底層\\緑点は公共用水域、水色が実験値、オレンジが観測値}
+\end{figure}
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[keepaspectratio, width=170mm]{contour/tempdynTokyo920_kawasaki.png}
+    \caption{川崎人工島での水温コンターマップ}
+\end{figure}
+
+\end{document}

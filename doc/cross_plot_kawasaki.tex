@@ -1,0 +1,59 @@
+\documentclass[fontsize=12pt,paper=a4]{jlreq}
+\usepackage{graphicx}
+%\usepackage[margin=6truemm]{geometry}
+%\usepackage{caption}
+\usepackage{booktabs}
+%\captionsetup[figure]{skip=0pt}
+%\makeatletter
+%\setlength{\@fptop}{3pt}
+%\setlength{\@fpsep}{3pt}
+%\setlength{\@fpbot}{0pt plus 1fil}
+%\makeatother
+\graphicspath{{../png/}}
+\begin{document}
+水温が低い問題を受けて、メッシュの領域を変化させることでどんな影響があるか調べた。(河川1.8倍,風力1.4倍*Tokyo610のみ風力1.4倍,河川1.0倍)
+
+
+\begin{table}
+  \begin{minipage}[hbtp]{0.5\hsize}
+    \begin{tabular}{lrr} \toprule
+      パラメータ & 値 \\ \midrule
+      HPRNU & 0.25\\
+      Horizontal\_mixing\_coefficient & 0.25\\
+      VPRNU & 0.12\\
+      Vertical\_mixing\_coefficient & 1e-7\\
+      風力　& 1.4倍\\
+      河川流量 & 1.8倍\\ \bottomrule
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[hbtp]{0.45\hsize}
+    \begin{tabular}{lrr} \toprule
+      label & メッシュの種類 \\ \midrule
+      Tokyo610 & 内湾、高解像度\\
+      Tokyo921 & 外洋、低解像度\\
+      Tokyo1001 & 内湾、低解像度\\ \bottomrule
+    \end{tabular}
+  \end{minipage}
+\end{table}
+
+
+\section{salinity}
+説明:同色が同じシミュレーションケースでの表層と底層を表しており、黒線は観測データ。
+\begin{figure}[hbtp]
+        \centering
+        \includegraphics[keepaspectratio, width=170mm]{cross_plot/salinity_kawasaki71.png}
+        \caption{川崎人工島での塩分}
+  \end{figure}
+
+
+
+\section{temperature}
+  \begin{figure}[hbtp]
+        \centering
+        \includegraphics[keepaspectratio, width=170mm]{cross_plot/temperature_kawasaki71.png}
+        \caption{川崎人工島での水温}
+  
+  \end{figure}
+
+
+\end{document}

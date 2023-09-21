@@ -1,0 +1,125 @@
+\documentclass[12pt,a4paper]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[margin=6truemm]{geometry}
+\usepackage{caption}
+\usepackage{booktabs}
+\captionsetup[figure]{skip=0pt}
+\makeatletter
+\setlength{\@fptop}{3pt}
+\setlength{\@fpsep}{3pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+\graphicspath{{../png/}}
+\begin{document}
+\section{contents}
+precipitation = T
+\begin{center}
+  \begin{tabular}{lr} \toprule
+    variables  & value \\ \midrule
+    Horizontal\_mixing\_coefficient & 0.3 \\
+    HPRNU & 0.3 \\
+    VPRNU & 0.12 \\
+    Vertical\_mixing\_coefficient & 1e-6 \\ \bottomrule
+  \end{tabular}
+\end{center}
+
+
+%\section{観測点}
+%\begin{figure}[hbtp]
+%  \includegraphics[keepaspectratio,width=100mm]{map/st_location_outer_revised.png}
+%  \caption{地図}
+%\end{figure}
+
+\section{塩分コンターマップ}
+\begin{figure}[t]
+  \begin{tabular}{cc}
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio,width=90mm]{contour/salinitydynrunbulkTokyo1001_chiba1buoy.png}
+      \caption{千葉港口第一号灯標}
+    \end{minipage} 
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio,width=90mm]{contour/salinitydynrunbulkTokyo1001_chibaharo.png}
+      \caption{千葉波浪観測塔}
+    \end{minipage} \\
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio,width=90mm]{contour/salinitydynrunbulkTokyo1001_kawasaki.png}
+      \caption{川崎}
+    \end{minipage} 
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio,width=90mm]{contour/salinitydynrunbulkTokyo1001_urayasu.png}
+      \caption{浦安}
+    \end{minipage} 
+  \end{tabular}
+\end{figure}
+
+
+\clearpage
+\begin{figure}[hbtp]
+    \begin{tabular}{c}
+      \begin{minipage}[t]{0.5\hsize}
+        \centering
+        \includegraphics[keepaspectratio, width=180mm]{Tokyo1001/salinity_chiba1buoy.png}
+        \caption{千葉港口第一号灯標}
+      \end{minipage} \\
+      \begin{minipage}[t]{0.5\hsize}
+        \centering
+        \includegraphics[keepaspectratio, width=180mm]{Tokyo1001/salinity_chibaharo.png}
+        \caption{検見川沖(千葉波浪観測塔)}
+      \end{minipage} \\
+      \begin{minipage}[t]{0.5\hsize}
+        \centering
+        \includegraphics[keepaspectratio, width=180mm]{Tokyo1001/salinity_urayasu.png}
+        \caption{浦安}
+      \end{minipage} \\
+      \begin{minipage}[t]{0.5\hsize}
+        \centering
+        \includegraphics[keepaspectratio, width=180mm]{Tokyo1001/salinity_kawasaki.png}
+        \caption{川崎}
+      \end{minipage} \\
+    \end{tabular}
+  \end{figure}
+
+
+\clearpage
+\section{水温変化のコンター}
+\begin{figure}[hbtp]
+    \includegraphics[keepaspectratio,width=100mm]{contour/tempdynrunbulkTokyo1001_kawasaki.png}
+    \caption{川崎人工島の水温変化}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \begin{tabular}{c}
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio, width=180mm]{Tokyo1001/temperature_chiba1buoy.png}
+      \caption{千葉港口第一号灯標}
+    \end{minipage} \\
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio, width=180mm]{Tokyo1001/temperature_chibaharo.png}
+      \caption{検見川沖(千葉波浪観測塔)}
+    \end{minipage} \\
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio, width=180mm]{Tokyo1001/temperature_urayasu.png}
+      \caption{浦安}
+    \end{minipage} \\
+    \begin{minipage}[t]{0.5\hsize}
+      \centering
+      \includegraphics[keepaspectratio, width=180mm]{Tokyo1001/temperature_kawasaki.png}
+      \caption{川崎}
+    \end{minipage} \\
+  \end{tabular}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[keepaspectratio,width=170mm]{contour/khrunbulkTokyo1001_kawasaki.png}
+  \caption{川崎の鉛直渦動拡散係数変化}
+\end{figure}
+
+
+\end{document}

@@ -1,0 +1,112 @@
+\documentclass[fontsize=12pt,paper=a4]{jlreq}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\graphicspath{{../png/}}
+
+%begin
+\begin{document}
+\section{tvdb\_run.nmlの結果 quick view}
+バロクリニック流れを実装した．
+\begin{table}
+  \begin{minipage}[hbtp]{0.5\hsize}
+    \begin{tabular}{lrr} \toprule
+      パラメータ & 値 \\ \midrule
+      HPRNU & 0.4\\
+      Horizontal\_mixing\_coefficient & 0.1\\
+      VPRNU & 1.0\\
+      Vertical\_mixing\_coefficient & 1e-6\\
+      河川流量 & 1.0倍 \\
+      風力 & 1.4倍\\ \bottomrule
+    \end{tabular}
+  \end{minipage}
+\end{table}
+
+%salinity
+
+%コンター
+\begin{figure}[hbtp]
+  \begin{tabular}{cc}
+    \begin{minipage}[hbtp]{0.5\hsize}
+      \includegraphics[keepaspectratio, width=90mm]{contour/salinitytvdb_chibaharo.png}
+      \caption{検見川沖での塩分コンターマップ}
+    \end{minipage} & 
+    \begin{minipage}[hbtp]{0.5\hsize}
+      \includegraphics[keepaspectratio, width=90mm]{contour/salinitytvdb_kawasaki.png}
+      \caption{川崎人工島での塩分コンターマップ}
+    \end{minipage} \\
+    \begin{minipage}[hbtp]{0.5\hsize}
+      \includegraphics[keepaspectratio, width=90mm]{contour/salinitytvdb_chiba1buoy.png}
+      \caption{chiba1buoyでの塩分コンターマップ}
+    \end{minipage} & 
+    \begin{minipage}[hbtp]{0.5\hsize}
+      \includegraphics[keepaspectratio, width=90mm]{contour/salinitytvdb_urayasu.png}
+      \caption{浦安での塩分コンターマップ}
+    \end{minipage} \\
+  \end{tabular}
+\end{figure}
+
+
+\begin{figure}[hbtp]
+  \begin{tabular}{cc}
+    \begin{minipage}[hbtp]{0.9\hsize}
+      \includegraphics[keepaspectratio, width=170mm]{tvdb/salinity_chibaharo.png}
+      \caption{検見川沖での塩分コンターマップ}
+    \end{minipage} \\
+    \begin{minipage}[hbtp]{0.9\hsize}
+      \includegraphics[keepaspectratio, width=170mm]{tvdb/salinity_kawasaki.png}
+      \caption{川崎人工島での塩分コンターマップ}
+    \end{minipage} \\
+    \begin{minipage}[hbtp]{0.9\hsize}
+      \includegraphics[keepaspectratio, width=170mm]{tvdb/salinity_chiba1buoy.png}
+      \caption{chiba1buoyでの塩分コンターマップ}
+    \end{minipage} \\
+    \begin{minipage}[hbtp]{0.9\hsize}
+      \includegraphics[keepaspectratio, width=170mm]{tvdb/salinity_urayasu.png}
+      \caption{浦安での塩分コンターマップ}
+    \end{minipage} \\
+  \end{tabular}
+\end{figure}
+
+
+
+%temp
+\begin{figure}[hbtp]
+        \centering
+        \includegraphics[keepaspectratio, width=170mm]{tvdb/temperature_kawasaki.png}
+        \caption{川崎人工島での水温　左から表層、中層、底層\\緑点は公共用水域、水色が実験値、オレンジが観測値}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[keepaspectratio, width=170mm]{tvdb/temperature_urayasu.png}
+  \caption{浦安での水温　左から表層、中層、底層\\緑点は公共用水域、水色が実験値、オレンジが観測値}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[keepaspectratio, width=170mm]{tvdb/temperature_chiba1buoy.png}
+  \caption{chiba1buoyでの水温 左から表層、中層、底層\\緑点は公共用水域、水色が実験値、オレンジが観測値}
+\end{figure}
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[keepaspectratio, width=170mm]{tvdb/temperature_chibaharo.png}
+  \caption{検見川沖での水温　左から表層、中層、底層\\緑点は公共用水域、水色が実験値、オレンジが観測値}
+\end{figure}
+
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[keepaspectratio, width=170mm]{contour/temptvdb_chibaharo.png}
+    \caption{検見川沖での水温コンターマップ}
+\end{figure}
+
+
+%kh
+%\begin{figure}[hbtp]
+%  \centering
+%  \includegraphics[keepaspectratio, width=170mm]{contour/khrunesttvdb_kawasaki.png}
+%  \caption{川崎での鉛直渦動拡散係数コンターマップ}
+%\end{figure}
+
+\end{document}
