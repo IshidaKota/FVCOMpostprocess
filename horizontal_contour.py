@@ -1,7 +1,7 @@
 from pyproj import Proj
 import netCDF4
 import matplotlib.pyplot as plt
-from module.ncVariablesConverter import convertCoordsToLonlat,covertJulianToDate
+from module.ncVariablesConverter import convertCoordsToLonlat,convertJulianToDate
 from datetime import timedelta as tdelta
 from datetime import datetime
 #revised by Kota Ishida 2023/9/11
